@@ -3126,8 +3126,15 @@ if game.PlaceId == 3541987450 or game.PlaceId == 5208655184 or game.PlaceId == 1
         return loadstring(game:HttpGet(repo .. "DEPENDENCIES/Library.lua", true))()
     end)
 
-    if success then
-        library = library_func(shared, utility)
+if success then
+    print("Library function:", library_func)
+
+    if type(library_func) ~= "function" then
+        warn("Library.lua did not return a function")
+        return
+    end
+
+    library = library_func(shared, utility)
         shared.library = library
 
         getgenv().Toggles = library.Toggles or {}
