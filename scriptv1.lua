@@ -25809,7 +25809,7 @@ end
 
             local AUTO_PARRY_SOUNDS = {
                 ["OwlSlash"] = {delay = 0.1, blockDuration = 0.7, requiresVisibility = false},
-		["Snarvindur"] = {delay = 0.1, blockDuration = 0.3, requiresVisibility = false},
+				["Snarvindur"] = {delay = 0.2, blockDuration = 0.5, requiresVisibility = false},
                 ["Shadowrush"] = {delay = 0.05, blockDuration = 0.3, requiresVisibility = true},
                 ["ShadowrushCharge"] = {delay = 0.05, blockDuration = 0.3, requiresVisibility = true},
                 ["PerfectCast"] = {delay = 0, blockDuration = 0.25, requiresVisibility = true}
